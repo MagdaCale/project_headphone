@@ -35,6 +35,8 @@ p {
 /* +++++++++ general style ++++++++++++ */
 
 
+
+
 header {
     margin: 0 10vh;
     position: sticky;
@@ -59,16 +61,50 @@ header {
     padding: 0 10px;
 }
 
-/* +++++++++ aside +++++++++ */
+.socialmedia {
+    margin: 5vh 10vh 0 10vh;
+    display: flex;
+    justify-content: space-between;
+    color: #867772;
+}
 
+.socialmedia a {
+    font-size: 1rem;
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
 
-/* +++++++++ aside +++++++++ */
+.socialmedia a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.socialmediaLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmediaLinks a {
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.socialmediaLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
 
 
 /* +++++++++++++++ MAIN +++++++++++++++ */
 
 .pageSize1 {
-    margin: 0 10vh;
+    margin: 0 10vh 0 5vh;
     display: flex;
 }
 
@@ -143,4 +179,58 @@ video {
 
 .imgAndTextReverse {
     flex-direction: row-reverse;
+}
+
+.logo {
+    margin: 5vh 10vh 0 5vh;
+}
+
+.navigation {
+    position: sticky;
+    top: 20vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navigation nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.navigation nav li {
+    margin-bottom: 52px;
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+.navigation nav li a {
+    color: rgb(115, 115, 115);
+    text-decoration: none;
+}
+
+/* +++++++++++++++++++ navigation styling circel & line +++++++++++++++++++ */
+
+
+.circle {
+    border: 1px solid #867772;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+.outline {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
+} 
+
+.line {
+    border-left: 1px solid #867772;
+    height: 50px;
+    width: 2px;
+    margin-left: 15px;
 }

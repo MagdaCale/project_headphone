@@ -29,7 +29,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    width: 50vw;
+    width: 55vw;
 }
 
 h2 {
@@ -55,6 +55,7 @@ p {
 }
 
 .socialmedia a {
+    font-size: 1rem;
     color: #867772;
     text-decoration: none;
     padding: 0 10px;
@@ -100,11 +101,11 @@ aside {
 }
 
 .experienceSection {
-    width: 50%;
+    width: 45%;
 }
 
 .experienceText {
-    padding: 8vh;
+    padding: 10vh 0 0 10vh;
     width: 80%;
 }
 
@@ -162,14 +163,14 @@ aside {
     padding: 5px;
 }
 
+.outline {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
+} 
+
 .line {
     border-left: 1px solid #867772;
     height: 50px;
     width: 2px;
     margin-left: 15px;
 }
-
-.outline {
-    outline: 1px solid #fff;
-    outline-offset: 3px;
-} 

@@ -1,13 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 
+font-family: 'Work Sans', sans-seri
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
+*/
+
+
+/* +++++++++ general style ++++++++++++ */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #2e2e2e;
+    color: rgb(234, 204, 194);
+    font-family: 'Work Sans';    
+}
 
-/* 
-font-family: 'Work Sans', sans-seri
-Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
-*/
+.bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../img/section-voyager.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 55vw;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+p {
+    color: rgb(115, 115, 115);
+}
+
+/* +++++++++ general style ++++++++++++ */
+
+.socialmedia {
+    margin: 5vh 10vh 0 10vh;
+    display: flex;
+    justify-content: space-between;
+    color: #867772;
+}
+
+.socialmedia a {
+    font-size: 1rem;
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.socialmedia a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.socialmediaLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmediaLinks a {
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.socialmediaLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+/* +++++++++++++++++++ lounger +++++++++++++++++++ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside {
+    margin-left: 35px;
+    min-width: 150px;
+}
+
+.loungerSection {
+    width: 45%;
+}
+
+.loungerText {
+    padding: 10vh 0 0 10vh;
+    width: 80%;
+}
+
+.loungerText h2 {
+    margin: 5vh 0 10vh 0;
+}
+
+.loungerText p {
+    line-height: 25px;
+    margin-bottom: 20px;
+} 
+
+
+
+/* +++++++++++++++++++ ASIDE +++++++++++++++++++ */
+
+
+.logo {
+    margin: 5vh 10vh 0 5vh;
+}
+
+.navigation {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navigation nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.navigation nav li {
+    margin-bottom: 52px;
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+.navigation nav li a {
+    color: rgb(115, 115, 115);
+    text-decoration: none;
+}
+
+/* +++++++++++++++++++ navigation styling circel & line +++++++++++++++++++ */
+
+
+.circle {
+    border: 1px solid #867772;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+.outline {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
+} 
+
+.line {
+    border-left: 1px solid #867772;
+    height: 50px;
+    width: 2px;
+    margin-left: 15px;
+}
