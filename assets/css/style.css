@@ -1,13 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 
+font-family: 'Work Sans', sans-seri
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
+*/
+
+
+/* +++++++++ general style ++++++++++++ */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #2e2e2e;
+    font-family: 'Work Sans', sans-seri;
+}
+h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: rgb(234, 204, 194);
+}
 
-/* 
-font-family: 'Work Sans', sans-seri
-Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
-*/
+/* +++++++++ general style ++++++++++++ */
+
+
+header {
+    margin: 0 10vh;
+    position: sticky;
+    top: 5vh;
+    color: rgb(234, 204, 194);
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerArticle {
+    display: flex;
+    gap: 10vh;
+    color: #867772;
+}
+
+.socialHeader a {
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* +++++++++ aside +++++++++ */
+
+
+/* +++++++++ aside +++++++++ */
+
+
+/* +++++++++++++++ MAIN +++++++++++++++ */
+
+.pageSize1 {
+    margin: 0 10vh;
+    display: flex;
+}
+/* ++++++++++ section about ++++++++++ */
+.about {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* ++++++++++ article headline ++++++++++ */
+
+.headline h2 {
+    margin: 15vh 0 19vh 30vh;
+    width: 40%;
+    word-break: keep-all;
+}
+
+.headline>img {
+    width: 100%;
+}
+
+/* ++++++++++ article img & pTag ++++++++++ */
+
+.imgAndPTag {
+    display: flex;
+    margin: 20vh;
+}
+
+.imgAndPTag>img {
+    width: 50%;
+}
+
+.imgAndPTag>div {
+    padding: 5vh 0 0 10vh;
+}
+
+.imgAndPTag>div>h2 {
+    margin-bottom: 5vh;
+}
+
+.imgAndPTag>div>p {
+    line-height: 3vh;
+    color:  rgb(115, 115, 115);
+}
+
+.imgAndPTag>div>p:first-of-type {
+    margin-bottom: 2vh;
+}
+
+/* +++++++++++++++++++ INSPIRATION +++++++++++++++++++ */

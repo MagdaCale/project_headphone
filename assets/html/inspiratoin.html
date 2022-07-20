@@ -4,67 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../css/inspiratoin.css">
     <title>Project Headphone</title>
 </head>
 <body>
-    <header class="aboutHeader">
-        <img src="../img/logo.svg" alt="logo">
-            <article class="aboutArticle">
-                <div>
-                    Subscribe & Contact
-                </div>
-                <div>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">youtube</a>
-                </div>
-                <div>
-                    <p>DE</p>
-                </div>
-            </article>
+    <header>
+        <section class="sectionHeader">
+            <img src="../img/logo.svg" alt="logo">
+                <article class="headerArticle">
+                    <div>
+                        Subscribe & Contact
+                    </div>
+                    <div class="socialHeader">
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="#">youtube</a>
+                    </div>
+                    <div>
+                        <p>DE</p>
+                    </div>
+                </article>
+        </section>
     </header>
 
-    <!-- ++++++++++++++++++ Aside ++++++++++++++++++ -->
-    <aside>
-        <nav>
-            <li><a href="../../index.html">About</a></li>
-            <li><a href="./lounger.html">Lounger</a></li>
-            <li><a href="./experience.html">Experience</a></li>
-            <li><a href="./inspiratoin.html">Inspiration</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-        </nav>
-    </aside>
-
     <!-- ++++++++++++++++++ MAIN ++++++++++++++++++ -->
-    <main class="pageSize">
+    <main class="pageSize1">
+            <!-- ++++++++++++++++++ Aside ++++++++++++++++++ -->
 
-        <video controls > <!-- autoplay -->
+        <aside>
+            <nav>
+                <li><a href="../../index.html">About</a></li>
+                <div class="line"></div>
+                <li><a href="./lounger.html">Lounger</a></li>
+                <div class="line"></div>
+                <li><a href="./experience.html">Experience</a></li>
+                <div class="line"></div>
+                <li><a href="./inspiratoin.html">Inspiration</a></li>
+                <div class="line"></div>
+                <li><a href=".shop.html">Shop</a></li>
+            </nav>
+        </aside>
+    <!-- ++++++++++++++++++ Aside ++++++++++++++++++ -->
+
+        <section class="inspoSection">
+
+            <video controls > <!-- autoplay -->
             <source src="../img/Magical_Home.mp4">
-        </video>
+            </video>
 
-        <section>
-            <h2>AN ALCHEMY OF DESIGN, CRAFT AND SOUND. </h2>
-            <h3>Exist to Create.</h3>
-            <article>
-                <p class="btn">SOUND</p>
-                <p class="btn">DESIGN</p>
-                <p class="btn">CRAFT</p>
+            <article class="textAndBtn">
+                <h3>AN ALCHEMY OF DESIGN, CRAFT AND SOUND. </h3>
+                <h2>Exist to Create.</h2>
+                <div>
+                    <button class="btn">SOUND</button>
+                    <button class="btn">DESIGN</button>
+                    <button class="btn">CRAFT</button>
+                    <p>We define our world through imagination.</p>
+                </div>
             </article>
-            <p>We define our world through imagination.</p>
-        </section>
 
-        <section>
-            <article>
+            <article class="imgAndText">
                 <img src="../img/ETC_6.webp" alt="3D">
                 <div>
                     <h3>Sound Alchemy</h3>
                     <h2>A feeling for sound</h2>
-                    <p>The power of music is without bounds, it goes straight to our hearts. Our job is to do justice to that power. We make that feeling thrive by creating the most impactful, accurate and immersive sound experience possible.
+                    <p>The power of music is without bounds, it goes straight to our hearts. Our job is to do justice to that power. We make that feeling thrive by creating the most impactful, accurate and immersive sound experience possible.</p>
                 </div>
-                </p>
             </article>
-            <article>
+
+            <article class="imgAndText imgAndTextReverse">
                 <img src="../img/ETC_5.webp" alt="3D">
                 <div>
                     <h3>Sound Architecture</h3>
@@ -72,7 +80,8 @@
                     <p>Join us in a conversation among a concept developer, an acoustic engineer and a technical project manager taking us through the creation process of a new, ground breaking product.</p>
                 </div>
             </article>
+
         </section>
-    </main>
-</body>
-</html>
+        </main>
+    </body>
+    </html>

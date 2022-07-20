@@ -1,13 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 
+font-family: 'Work Sans', sans-seri
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
+*/
+
+
+/* +++++++++ general style ++++++++++++ */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #2e2e2e;
+    font-family: 'Work Sans', sans-serif;    
+}
 
-/* 
-font-family: 'Work Sans', sans-seri
-Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
-*/
+.bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../img/section-experience-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.3rem;
+    color: rgb(234, 204, 194);
+}
+h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgb(234, 204, 194);
+}
+
+p {
+    color: rgb(115, 115, 115);
+}
+
+/* +++++++++ general style ++++++++++++ */
+
+
+header {
+    margin: 0 10vh;
+    color: rgb(234, 204, 194);
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerArticle {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.headerArticle {
+    display: flex;
+    gap: 10vh;
+    color: #867772;
+}
+
+.socialHeader a {
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+
+/* +++++++++++++++++++ experience +++++++++++++++++++ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside {
+    min-width: 150px;
+}
+
+.experienceSection>article {
+    width: 50%;
+
+}
+
+
+
+
+
