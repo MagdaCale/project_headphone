@@ -15,7 +15,8 @@ Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 
 }
 body {
     background-color: #2e2e2e;
-    font-family: 'Work Sans', sans-serif;    
+    color: rgb(234, 204, 194);
+    font-family: 'Work Sans';    
 }
 
 .bgImg {
@@ -34,12 +35,10 @@ body {
 h2 {
     font-weight: 300;
     font-size: 2.3rem;
-    color: rgb(234, 204, 194);
 }
 h3 {
     font-weight: 300;
     font-size: 1.3rem;
-    color: rgb(234, 204, 194);
 }
 
 p {
@@ -48,33 +47,42 @@ p {
 
 /* +++++++++ general style ++++++++++++ */
 
-
-header {
-    margin: 0 10vh;
-    color: rgb(234, 204, 194);
-}
-
-.sectionHeader {
+.socialmedia {
+    margin: 5vh 10vh 0 10vh;
     display: flex;
     justify-content: space-between;
-}
-
-.headerArticle {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-}
-
-.headerArticle {
-    display: flex;
-    gap: 10vh;
     color: #867772;
 }
 
-.socialHeader a {
+.socialmedia a {
     color: #867772;
     text-decoration: none;
     padding: 0 10px;
+    transition: 1s;
+}
+
+.socialmedia a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.socialmediaLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialmediaLinks a {
+    color: #867772;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.socialmediaLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 
@@ -87,15 +95,81 @@ main {
 }
 
 aside {
+    margin-left: 35px;
     min-width: 150px;
 }
 
-.experienceSection>article {
+.experienceSection {
     width: 50%;
+}
 
+.experienceText {
+    padding: 8vh;
+    width: 80%;
+}
+
+.experienceText h2 {
+    margin: 5vh 0 10vh 0;
+}
+
+.experienceText p {
+    line-height: 25px;
+    margin-bottom: 20px;
+} 
+
+
+
+/* +++++++++++++++++++ ASIDE +++++++++++++++++++ */
+
+
+.logo {
+    margin: 5vh 10vh 0 5vh;
+}
+
+.navigation {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navigation nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.navigation nav li {
+    margin-bottom: 52px;
+    list-style: none;
+    margin-left: 40px;
 }
 
 
+.navigation nav li a {
+    color: rgb(115, 115, 115);
+    text-decoration: none;
+}
+
+/* +++++++++++++++++++ navigation styling circel & line +++++++++++++++++++ */
 
 
+.circle {
+    border: 1px solid #867772;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px;
+    padding: 5px;
+}
 
+.line {
+    border-left: 1px solid #867772;
+    height: 50px;
+    width: 2px;
+    margin-left: 15px;
+}
+
+.outline {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
+} 
